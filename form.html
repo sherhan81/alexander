@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма запису</title>
+    <style>
+        body {
+            background-color: #222;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            background-color: #1c1c1c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: #333;
+            color: #fff;
+        }
+        button {
+            background-color: #ff9900;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/xjkwvjqo" method="POST">
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Надіслати</button>
+    </form>
+</body>
+</html>
